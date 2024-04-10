@@ -1,0 +1,22 @@
+:root{
+    --backgroundColor: white;
+    --titleColor: white;
+    --gradient: linear-gradient(#5596FF,#AC2DEB);
+    --inputTextColor: #9495A5;
+    --newTodosContainer: white;
+    --listBorderBottomColor: gray;
+    --listBgColor: white;
+    --listTextColor: Black;
+    --bgImage: url(./assets/images/bg-img.png)
+}
+[data-theme="dark"]{
+    --backgroundColor: Black;
+    --titleColor: white;
+    --gradient: linear-gradient(#3710BD,#A42395);
+    --inputTextColor: #767992;
+    --newTodosContainer:#25273d ;
+    --listBorderBottomColor: gray;
+    --listBgColor: #25273d;
+    --listTextColor: white;
+    
+}

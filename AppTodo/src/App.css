@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+body{
+  font-family: Josefin Sans ;
+  background-color: var(--backgroundColor);
+}
+.app{
+  background-color: var(--backgroundColor);
+  height: 100vh;
+}
+.pageContainer{
+  width: 100%;
+  height: 400px;
+  background-image: var( --bgImage);
+  background-position: center;
+  position: relative;
+  background-size: 100%;
+  
+}
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  color: var(--titleColor);
+  font-family: sans-serif;
+  height:40vh;
+ 
+}
+.title h1{
+  line-height: 40px;
+  font-weight: 700;
+  z-index: 1;
+  letter-spacing: 10px;
+  font-family: Josefin Sans;
+  
+}
+.moonIcon, .sunIcon{
+  z-index: 2;
+  cursor: pointer;
+}
+.gradient{
+  background: var( --gradient);
+  width: 100%;
+  height: 400px;
+  opacity: .4;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.todosContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -150px;
+ 
+}
+.mainInput{
+  z-index: 2;
+  width: 540px;
+  height: 64px;
+  border-radius: 12px;
+  border: none;
+  color: var( --inputTextColor);
+  font-family: Josefin Sans;
+  background-color: var(  --newTodosContainer);
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 70px;
+
+}
+.input-icon{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+
+}
+.circleIcon{
+  position: absolute;
+  top: 17px;
+  left: 0;
+  padding-left: 20px;
+  z-index: 2;
+  cursor: pointer;
+  color: blueviolet;
+  font-size: 25px;
+  
+}
+.newTodosContainer{
+  z-index: 2;
+  list-style: none;
+  margin-top: 20px;
+  padding: 20px 0;
+  border: 1px solid var(--newTodosContainer);
+  background-color: var(--newTodosContainer);
+  width: 595px;
+ 
+}
+
+.list{
+  margin: 10px 0;
+  border-bottom: 1px solid var(--listBorderBottomColor);
+  padding: 25px 250px;
+  background-color: var(--listBgColor);
+  color: var( --listTextColor);
+  position: relative;
+ 
+}
+.checkbox{
+position: absolute;
+left: 20px;
+top: 15px;
+} 
+ .text{
+  position: absolute;
+  left: 70px;
+  top: 15px;
+}
+.deleteList{
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  cursor: pointer;
+}
+
